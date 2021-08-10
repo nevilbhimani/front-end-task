@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="tracker.css">
+</head>
+
+<body>
+  <h1>Task manager</h1>
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">My list of tasks</h2>
+
+    <form id="myform">
+      <div id=labels class="input">
+        <input type="text" id="myInput" class="input" placeholder="enter a task">
+        <br><input type="date" id="date" class="input" placeholder="date">
+        <br><input type="time" id="time" class="input" placeholder="time">
+        <br><label class="radio1">compulsory:</label><input type="radio" class="roadio" id="yes" name="compulsory"
+          value="yes">
+        <label class="radio1" for="yes">yes</label>
+
+        <input type="radio" class="radio" id="no" name="compulsory" value="no">
+         <label class="radio1" for="no">No</label>
+
+      </div>
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </form>
+  </div>
+
+
+  <ul id="myUL">
+  </ul>
+
+
+
+</body>
+<script src="tracker.js"></script>
+
+</html>
