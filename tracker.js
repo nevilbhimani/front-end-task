@@ -47,7 +47,7 @@ var complete= document.getElementsByClassName("complete");
 var i;
 for(i=0;i < complete.length;i++){
  complete[i].onclick= function (){
- alert="hello";
+
   document.getElementByid("myUL").style.textDecoration ="line-through";
   document.getElementByid("span2").style.textDecoration =" line-through";
   document.getElementByid("span3").style.textDecoration =" line-through";
@@ -112,13 +112,6 @@ function newElement() {
 
     }
   }
-  for(i=0;i < complete.length;i++){
-    complete[i].onclick= function (){
-    alert="hello";
-     document.getElementByid("myUL").style.textDecoration ="line-through";
-     document.getElementByid("span2").style.textDecoration =" line-through";
-     document.getElementByid("span3").style.textDecoration =" line-through";
-      document.getElementByid("complete1").innertext="completed";
-     };
-   }
+ 
+     
 }
